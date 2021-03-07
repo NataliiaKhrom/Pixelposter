@@ -1,0 +1,273 @@
+<!----------
+
+
+
+---------->
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-9 col-lg-10"> --->
+      <ul class="nav nav-justified">
+        <li class="nav-item">
+          <a href="#info" data-toggle="tab" class="nav-link active btn btn-default text-uppercase text-muted mr-2 mb-2">
+           aaaaa
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#quests" data-toggle="tab" class="nav-link btn btn-default text-uppercase text-muted mx-2 mb-2">
+            bbbbb
+          </a>
+        </li>
+      </ul>
+      <div class="card bg-light mt-1 mb-3" style="height:120em; overflow:auto;">
+        <div class="tab-content">
+<!---- INFO TAB ---->
+          <div id="info" class="tab-pane fade in active show">
+            <div class="card-block">
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------- SIDEBAR ---------->
+<div class="row mb-3">
+<div class="col-md-4 push-md-8 mb-1">
+<div class="card bg-faded table">
+
+<!----- TITLE ----->
+<h2 class="card-inverse card-header text-uppercase text-muted">Profile</h2>
+<div class="card-block text-center">
+
+<!----- ICON (200x200 RECOMMENDED) ----->
+<img src="http://placehold.it/200x200" class="img-thumbnail mb-4" />
+
+<!----- BASIC INFOS ----->
+<ul class="list-group">
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Nickname</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Species</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Gender</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Pronouns</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Theme</span>
+  <a href="/"><i class="fi fi-music pr-1" />Song Title</a></li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Voice</span>
+  <a href="/">Lorem ipsum</a></li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Value</span>
+  Lorem ipsum</li>
+  <!---------- !! DO NOT DELETE CREDIT !! ---------->
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Layout</span>
+  <span class="font-weight-bold text-uppercase">@watergems</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------- MAIN BODY ---------->
+<div class="col-md-8 pull-md-4">
+<div class="card bg-faded table">
+
+<!----- TITLE ----->
+<h2 class="card-inverse card-header text-uppercase text-muted">Information</h2>
+<div class="card-block text-justify pt-0">
+
+<!----- PERSONALITY ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Personality</h5>
+<hr class="mt-0 mb-2" />
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+
+<!----- HISTORY ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">History</h5>
+<hr class="mt-0 mb-2" />
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+
+<!----- ABILITIES ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Abilities</h5>
+<hr class="mt-0 mb-2" />
+<h6 class="text-uppercase text-muted mr-auto m-0">Skillset</h6>
+<ul class="pl-4">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+  </ul>
+<h6 class="text-uppercase text-muted mr-auto m-0">Unique Abilities</h6>
+<ul class="pl-4">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+<!----- RELATIONSHIPS ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Relationships</h5>
+<hr class="mt-0 mb-2" />
+<!--  <div class="row mb-2">
+        <div class="col-md-8 mb-2">
+            <div class="ui-accordion card card-outline-danger bg-faded h-100">
+                <h2 class="card-inverse card-danger card-header text-white display">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    Relationships
+                </h2>
+                <div class="ui-accordion-content card-block">  -->
+                    <table  class="border-0 mx-auto" style="margin-left: auto; margin-right: auto;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <!----- ICON (200x200 RECOMMENDED) ----->
+                                     <img src="https://s6.postimg.cc/vow0mk0xd/rel1.png" style="max-height:170px;" class="float-left mr-2">
+                                    <h6 class="text-uppercase text-muted mr-auto m-0">Name</h6>
+                                    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                     <img src="https://s6.postimg.cc/vow0mk0xd/rel1.png" class="float-left mr-2">
+                                    <h6 class="text-uppercase text-muted mr-auto m-0">Name</h6>
+                                    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                     <img src="https://s6.postimg.cc/vow0mk0xd/rel1.png" class="float-left mr-2">
+                                    <h6 class="text-uppercase text-muted mr-auto m-0">Name</h6>
+                                    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                                </td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                <!-- </div>
+         <  </div>
+        </div> -->
+
+
+<!----- TRIVIA ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Trivia</h5>
+<hr class="mt-0 mb-2" />
+<ul class="pl-4">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+<!---------- !! DO NOT DELETE CREDIT !! ---------->
+<div class="float-right"><a href="http://toyhou.se/watergems" title="Layout by watergems" class="btn btn-primary d-inline-flex px-2"><i class="fa fa-code" /></a></div>
+
+</div>
+ </div>
+
+ <div id="quests" class="tab-pane fade">
+            <div class="card-block">
+
+<!---------- SIDEBAR ---------->
+<div class="row mb-3">
+<div class="col-md-4 push-md-8 mb-1">
+<div class="card bg-faded table">
+
+<!----- TITLE ----->
+<h2 class="card-inverse card-header text-uppercase text-muted">Profile</h2>
+<div class="card-block text-center">
+
+<!----- ICON (200x200 RECOMMENDED) ----->
+<img src="http://placehold.it/200x200" class="img-thumbnail mb-4" />
+
+<!----- BASIC INFOS ----->
+<ul class="list-group">
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Nickname</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Species</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Gender</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Pronouns</span>
+  Lorem ipsum</li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Theme</span>
+  <a href="/"><i class="fi fi-music pr-1" />Song Title</a></li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Voice</span>
+  <a href="/">Lorem ipsum</a></li>
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Value</span>
+  Lorem ipsum</li>
+  <!---------- !! DO NOT DELETE CREDIT !! ---------->
+  <li class="list-group-item justify-content-between"><span class="font-weight-bold text-muted text-uppercase">Layout</span>
+  <span class="font-weight-bold text-uppercase">@watergems</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------- MAIN BODY ---------->
+<div class="col-md-8 pull-md-4">
+<div class="card bg-faded table">
+
+<!----- TITLE ----->
+<h2 class="card-inverse card-header text-uppercase text-muted">Information</h2>
+<div class="card-block text-justify pt-0">
+
+<!----- PERSONALITY ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Personality</h5>
+<hr class="mt-0 mb-2" />
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+
+<!----- HISTORY ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">History</h5>
+<hr class="mt-0 mb-2" />
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+
+<!----- ABILITIES ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Abilities</h5>
+<hr class="mt-0 mb-2" />
+<h6 class="text-uppercase text-muted mr-auto m-0">Skillset</h6>
+<ul class="pl-4">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+  </ul>
+<h6 class="text-uppercase text-muted mr-auto m-0">Unique Abilities</h6>
+<ul class="pl-4">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+<!----- RELATIONSHIPS ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Relationships</h5>
+<hr class="mt-0 mb-2" />
+<h6 class="text-uppercase mr-auto m-0">@@1196297</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+
+<h6 class="text-uppercase mr-auto m-0">@@1196297</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec interdum arcu. Praesent gravida congue nulla consectetur pellentesque. Maecenas laoreet ac orci non laoreet. In at nisl a nisl mollis aliquet eu eget turpis. Fusce nec mauris eget elit gravida tempor. Morbi ut lacinia sapien. Cras ac massa sed dolor faucibus mattis. Curabitur at convallis enim, vel ultricies felis. Donec eget augue vulputate, dictum turpis quis, efficitur metus. Sed feugiat consectetur magna, vel malesuada orci vehicula eget. Proin facilisis auctor feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pretium dictum dolor eu tempor. Suspendisse arcu ligula, sodales sed ex sed, feugiat imperdiet mi. Fusce vitae quam dignissim purus consequat semper id et erat. Integer ac porta felis.</p>
+
+<!----- TRIVIA ----->
+<h5 class="text-uppercase text-muted mr-auto pt-2">Trivia</h5>
+<hr class="mt-0 mb-2" />
+<ul class="pl-4">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+<!---------- !! DO NOT DELETE CREDIT !! ---------->
+<div class="float-right"><a href="http://toyhou.se/watergems" title="Layout by watergems" class="btn btn-primary d-inline-flex px-2"><i class="fa fa-code" /></a></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
