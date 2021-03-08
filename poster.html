@@ -24,7 +24,7 @@
             min-height: 100%;
           background: #000017;
           overflow-y: scroll;}
-        body::before {
+        /*body::before {
           opacity: 1;
            background: url('Images_1/sky_background_1.svg') center;
            background-size: auto 100% ;
@@ -32,13 +32,13 @@
            position: absolute;
            width: 100%;
            height: 100%;}
-        }
+        }*/
 
 /* SKY */
 
         .sky_background{
              position: fixed;
-             z-index: 1;
+             z-index: -1;
              display: block;
              top: 0;
              left: 0;
@@ -55,7 +55,7 @@
 
              .planet{
                   position: fixed;
-                  z-index: 2;
+                  z-index: 1;
                   display: block;
                   top: 0;
                   left: 0;
@@ -73,6 +73,93 @@
                   width: 100%;
                   height: 100%;}
 
+                  .planet_light{
+                      mix-blend-mode: screen;
+                       position: fixed;
+                       z-index: 2;
+                       display: block;
+                       top: 0;
+                       left: 0;
+                       right: 0;
+                       bottom: 0;}
+                    .planet_light::before {
+                      opacity: 1;
+                       background: url('Images_1/planet_effect.svg') no-repeat;
+                       background-size: auto 100%;
+                       content: "";
+                       position: absolute;
+                       position: absolute;
+                       /* top: 18%;
+                       left: 15%; */
+                       width: 100%;
+                       height: 100%;}
+
+                       .stars_1 {
+                            position: fixed;
+                            z-index: 2;
+                            display: block;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            animation: flicker1 4s linear infinite;}
+                       .stars_1::before {
+                         background: url('Images_1/stars_1.svg') center;
+                       background-size: auto 100% ;
+                       content: "";
+                       position: absolute;
+                       width: 100%;
+                       height: 100%;}
+
+                       @keyframes flicker1 {
+                         0% {opacity: 1;}
+                         25% {opacity: .2;}
+                         50% {opacity: 0;}
+                         75% {opacity: .2;}
+                         100% {opacity: 1;}}
+
+                         .stars_2 {
+                             opacity: 0;
+                              position: fixed;
+                              z-index: 2;
+                              display: block;
+                              top: 0;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
+                              animation: flicker2 4s linear infinite;}
+                         .stars_2::before {
+                           background: url('Images_1/stars_2.svg') center;
+                         background-size: auto 100% ;
+                         content: "";
+                         position: absolute;
+                         width: 100%;
+                         height: 100%;}
+
+                         @keyframes flicker2 {
+                           0% {opacity: 0;}
+                           25% {opacity: .2;}
+                           50% {opacity: 1;}
+                           75% {opacity: .2;}
+                           100% {opacity: 0;}}
+
+                           .stars_loud {
+                                position: fixed;
+                                z-index: 2;
+                                display: block;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;}
+                           .stars_loud::before {
+                             background: url('Images_1/stars_loud.svg') center;
+                           background-size: auto 100% ;
+                           content: "";
+                           position: absolute;
+                           width: 100%;
+                           height: 100%;}
+
+
 
         </style>
 
@@ -83,6 +170,9 @@
   <body>
 <div class="sky_background"></div>
 <div class="planet"></div>
-
+<div class="planet_light"></div>
+<div class="stars_1"></div>
+<div class="stars_2"></div>
+<div class="stars_loud"></div>
   </body>
 </html>
