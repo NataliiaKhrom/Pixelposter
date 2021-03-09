@@ -185,6 +185,38 @@
                            width: 100%;
                            height: 100%;}
 
+                           .ship{
+                                position: absolute;
+                                z-index: 1;
+                                display: block;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                animation: move1 10s infinite;}
+                             .ship::before {
+                               opacity: 0;
+                                background: url('Images_1/ship.svg') no-repeat;
+                                background-size: auto 100%;
+                                content: "";
+                                position: absolute;
+                                /* left: 15%; */
+                                width: 100%;
+                                height: 100%;
+                              animation: move2 5s linear infinite;
+                              animation-delay: 6s;}
+
+
+                                @keyframes move2 {
+                                    0% {opacity: 0; right:0;}
+                                    20% {opacity: .4; right: 100px;}
+                                    40% {opacity: .6; right: 200px;}
+                                    60% {opacity: .6; right: 300px;}
+                                    80% {opacity: .4; right: 400px;}
+                                    100% {opacity: 0; right: 500px;}}
+
+
+
 /* SKY */
   .ground{
     position: fixed;
@@ -376,6 +408,9 @@
 <div class="stars_2"></div>
 <div class="stars_loud"></div>
 <div class="cloud"></div>
+<div class="ship"></div>
+
+
 <div class="ground"></div>
 <div class="building"></div>
 
