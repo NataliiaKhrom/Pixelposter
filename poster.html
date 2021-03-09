@@ -159,7 +159,57 @@
                            width: 100%;
                            height: 100%;}
 
+                           .cloud {
+                                 mix-blend-mode: lighten;
+                                position: fixed;
+                                z-index: 2;
+                                display: block;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;}
+                           .cloud::before {
+                             background: url('Images_1/cloud.svg') left center no-repeat;
+                           background-size: auto 100% ;
+                           content: "";
+                           position: absolute;
+                           width: 100%;
+                           height: 100%;}
 
+/* SKY */
+  .ground{
+    position: fixed;
+    z-index: 3;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;}
+ .ground::before {
+   opacity: 1;
+    background: url('Images_1/ground_2.svg') bottom center;
+    background-size: auto 100% ;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;}
+
+    .building{
+      position: fixed;
+      z-index: 4;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;}
+   .building::before {
+     opacity: 1;
+      background: url('Images_1/building.svg') left center no-repeat;
+      background-size: auto 100% ;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;}
 
         </style>
 
@@ -174,5 +224,8 @@
 <div class="stars_1"></div>
 <div class="stars_2"></div>
 <div class="stars_loud"></div>
+<div class="cloud"></div>
+<div class="ground"></div>
+<div class="building"></div>
   </body>
 </html>
