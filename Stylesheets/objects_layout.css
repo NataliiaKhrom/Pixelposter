@@ -1,0 +1,176 @@
+.building{
+  /* position: fixed; */
+  position: absolute;
+  z-index: 4;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;}
+.building::before {
+ opacity: 1;
+  background: url('../Images_1/building_2.svg') left center no-repeat;
+  background-size: auto 100% ;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;}
+/* flowers */
+  .flowers_1{
+    /* position: fixed; */
+    position: absolute;
+       z-index: 4;
+       display: block;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;}
+    .flowers_1::before {
+      opacity: 1;
+       background: url('../Images_1/flowers_frame1.svg') left center no-repeat;
+       background-size: auto 100% ;
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       animation: frame1 2s steps(1) infinite;}
+
+       @keyframes frame1 {
+           0% {opacity: 1;}
+           50% {opacity: 0;}
+           100% {opacity: 1;}}
+
+       .flowers_2 {
+           opacity: 1;
+           /* position: fixed; */
+           position: absolute;
+            z-index: 4;
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;}
+         .flowers_2::before {
+           opacity: 0;
+            background: url('../Images_1/flowers_frame2.svg') left center no-repeat;
+            background-size: auto 100% ;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: frame2 2s steps(1) infinite;}
+
+
+                       @keyframes frame2 {
+                           0% {opacity: 0;}
+                           50% {opacity: 1;}
+                           100% {opacity: 0;}}
+
+
+                              .flowers_light {
+                              mix-blend-mode: hard-light;
+                               opacity: 1;
+                                position: absolute;
+                                z-index: 4;
+                                display: block;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;}
+                             .flowers_light::before {
+                               opacity: 0;
+                                background: url('../Images_1/light_flowers.svg') left center no-repeat;
+                                background-size: auto 100% ;
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                animation: blink_lights 2s steps(1) infinite;}
+
+                                @keyframes blink_lights {
+                                    0% {opacity: .3;}
+                                    50% {opacity: .6;}
+                                    100% {opacity: .3;}}
+
+
+
+                                    .robot_1{
+                                      /* position: fixed; */
+                                      position: absolute;
+                                       z-index: 5;
+                                       display: block;
+                                       top: 0;
+                                       left: 0;
+                                       right: 0;
+                                       bottom: 0;}
+                                      .robot_1::before {
+                                      opacity: 1;
+                                       background: url('../Images_1/robot_frame1.svg') left center no-repeat;
+                                       background-size: auto 100% ;
+                                       content: "";
+                                       position: absolute;
+                                       width: 100%;
+                                       height: 100%;
+                                       animation: frame3 2s steps(1) infinite;}
+                                       @keyframes frame3 {
+                                       0% {background: url('../Images_1/robot_frame1.svg') left center no-repeat;}
+                                       50% {background: url('../Images_1/robot_frame2.svg') left center no-repeat;}
+                                       100% {background: url('../Images_1/robot_frame1.svg') left center no-repeat;}}
+
+                                       .cosmonaut{
+                                         /* position: fixed; */
+                                         position: absolute;
+                                          z-index: 5;
+                                          display: block;
+                                          top: 0;
+                                          left: 0;
+                                          right: 0;
+                                          bottom: 0;}
+                                         .cosmonaut::before {
+                                         opacity: 1;
+                                          background: url('../Images_1/cosmo_1.svg') left center no-repeat;
+                                          background-size: auto 100% ;
+                                          content: "";
+                                          position: absolute;
+                                          width: 100%;
+                                          height: 100%;
+                                          animation: frame4 7s steps(1) infinite;}
+                                          @keyframes frame4 {
+                                          0% {background: url('../Images_1/cosmo_1.svg') left center no-repeat;}
+                                          60% {background: url('../Images_1/cosmo_2.svg') left center no-repeat;}
+                                          100% {background: url('../Images_1/cosmo_1.svg') left center no-repeat;}}
+
+                                          .cosmonaut_2{
+                                            position: fixed;
+                                             z-index: 5;
+                                             display: block;
+                                             top: 0;
+                                             left: 0;
+                                             right: 0;
+                                             bottom: 0;}
+                                            .cosmonaut_2::before {
+                                             opacity: 1;
+                                             background: url('../Images_1/cosmo2_1.svg') left center no-repeat;
+                                             background-size: auto 100% ;
+                                             content: "";
+                                             position: absolute;
+                                             width: 100%;
+                                             height: 100%;}
+
+                                             .crater{
+                                               /* position: fixed; */
+                                               position: absolute;
+                                                z-index: 5;
+                                                display: block;
+                                                top: 0;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: 0;}
+                                               .crater::before {
+                                                opacity: 1;
+                                                background: url('../Images_1/crater.svg') right center no-repeat;
+                                                background-size: auto 100% ;
+                                                content: "";
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;}
