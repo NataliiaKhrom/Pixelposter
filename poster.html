@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Веб-плакат</title>
     <!--  <link rel="stylesheet" href="Stylesheets/style_.css"> -->
-    <link rel="stylesheet" href="Stylesheets/reset.css">
+    <!-- <link rel="stylesheet" href="Stylesheets/reset.css"> -->
 <!-- <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
   <link rel="icon" type="image/png" href="Images/favicon.png" /> -->
+
+
+
+  <link rel="stylesheet" href="Stylesheets/style.css">
 
 <!-- __________________JAVA_____________________ -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,451 +21,35 @@
         $(window).on('scroll', function() {
           let y = 	$('.background').width();
           let z = 	$(window).width();
-        /*  let a = parseInt(x / 2); */
+          let a = (parseInt(x / 2));
+          let b = (z - y);
+
+          x = $(window).scrollTop();
+          if (a > b) {
+              $('.background').css('left', 0 - parseInt(x / 2) + '% ');}
+           /* $('.background').css('left', 0 - parseInt(x / 2) + '% '); */
+        });
+
+
+      /*  let x;
+        $(window).on('scroll', function() {
+          let y = 	$('.background').width();
+          let z = 	$(window).width();
+          let a = parseInt(x / 2);
           let a = (parseInt(x / 2));
           let b = (z - y);
 
         	x = $(window).scrollTop();
           if (a > b) {
             	$('.background').css('left', 0 - parseInt(x / 2) + '% ');}
-        	/* $('.background').css('left', 0 - parseInt(x / 2) + '% '); */
-
-        });
+        	 $('.background').css('left', 0 - parseInt(x / 2) + '% ');
+        }); */
 
 
 
       </script>
 <!-- __________________STYLE_____________________ -->
-        <style media="screen">
 
-        html {
-            height: 100%;
-        }
-        body {
-            margin: 0;
-             height: 200vh;
-            min-height: 100%;
-          background: #000017;
-          overflow-y: scroll;}
-
-        .screen {
-          position: fixed;
-          overflow: hidden;
-          /*z-index: 3; */
-          width: 100%;
-          height: 100%;
-          display: block;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;}
-
-        .background {
-        position: absolute;
-        width: 200%;
-        height: 100%;
-        top: 0;
-        left: 0; }
-
-/* SKY */
-
-/* .sky_background_2{
-     position: absolute;
-     z-index: -1;
-     display: block;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;}
-  .sky_background_2::before {
-    opacity: 1;
-     background: url('Images_1/sky_background_1.svg') center;
-     background-size: auto 100% ;
-     content: "";
-     position: absolute;
-     width: 100%;
-     height: 100%;} */
-
-        .sky_background{
-             /* position: fixed; */
-             position: absolute;
-             z-index: -1;
-             display: block;
-             top: 0;
-             left: 0;
-             right: 0;
-             bottom: 0;}
-          .sky_background::before {
-            opacity: 1;
-             background: url('Images_1/sky_background_1.svg') center;
-             background-size: auto 100% ;
-             content: "";
-             position: absolute;
-             width: 100%;
-             height: 100%;}
-
-             .planet{
-               /* position: fixed; */
-               position: absolute;
-                  z-index: 1;
-                  display: block;
-                  top: 0;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;}
-               .planet::before {
-                 opacity: 1;
-                  background: url('Images_1/planet_1.svg') no-repeat;
-                  background-size: auto 100%;
-                  content: "";
-                  position: absolute;
-                  position: absolute;
-                  /* top: 18%;
-                  left: 15%; */
-                  width: 100%;
-                  height: 100%;}
-
-                  .planet_light{
-                      mix-blend-mode: screen;
-                      /* position: fixed; */
-                      position: absolute;
-                       z-index: 2;
-                       display: block;
-                       top: 0;
-                       left: 0;
-                       right: 0;
-                       bottom: 0;}
-                    .planet_light::before {
-                      opacity: 1;
-                       background: url('Images_1/planet_effect.svg') no-repeat;
-                       background-size: auto 100%;
-                       content: "";
-                       position: absolute;
-                       position: absolute;
-                       /* top: 18%;
-                       left: 15%; */
-                       width: 100%;
-                       height: 100%;}
-
-                       .stars_1 {
-                         /* position: fixed; */
-                         position: absolute;
-                            z-index: 2;
-                            display: block;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            animation: flicker1 6s steps(1) infinite;}
-                       .stars_1::before {
-                         background: url('Images_1/stars_1.svg') center;
-                       background-size: auto 100% ;
-                       content: "";
-                       position: absolute;
-                       width: 100%;
-                       height: 100%;}
-
-                       @keyframes flicker1 {
-                         0% {opacity: 1;}
-                         25% {opacity: .5;}
-                         50% {opacity: 0;}
-                         75% {opacity: .5;}
-                         100% {opacity: 1;}}
-
-                         .stars_2 {
-                             opacity: 0;
-                             /* position: fixed; */
-                             position: absolute;
-                              z-index: 2;
-                              display: block;
-                              top: 0;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-                              animation: flicker2 6s steps(1) /*linear*/ infinite;}
-                         .stars_2::before {
-                        background: url('Images_1/stars_2.svg') center;
-                         background-size: auto 100% ;
-                         content: "";
-                         position: absolute;
-                         width: 100%;
-                         height: 100%;}
-
-                         @keyframes flicker2 {
-                           0% {opacity: 0;}
-                           25% {opacity: .5;}
-                           50% {opacity: 1;}
-                          75% {opacity: .5;}
-                           100% {opacity: 0;}}
-
-                           .stars_loud {
-                               mix-blend-mode: normal;
-                               /* position: fixed; */
-                               position: absolute;
-                                z-index: 2;
-                                display: block;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                              animation: flicker3 6s steps(1) /*linear*/ infinite;}
-                           .stars_loud::before {
-                             background: url('Images_1/stars_loud.svg') center;
-                           background-size: auto 100% ;
-                           content: "";
-                           position: absolute;
-                           width: 100%;
-                           height: 100%;}
-
-                           @keyframes flicker3 {
-                             0% {mix-blend-mode: normal;}
-                             10% {mix-blend-mode: hard-light;}
-                             30% {mix-blend-mode: normal;
-                             opacity: 1;}
-                             100% {mix-blend-mode: normal;}}
-
-                           .cloud {
-                                 mix-blend-mode: lighten;
-                                 /* position: fixed; */
-                                 position: absolute;
-                                z-index: 2;
-                                display: block;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;}
-                           .cloud::before {
-                             background: url('Images_1/cloud.svg') left center no-repeat;
-                           background-size: auto 100% ;
-                           content: "";
-                           position: absolute;
-                           width: 100%;
-                           height: 100%;}
-
-                           .ship{
-                                position: absolute;
-                                z-index: 1;
-                                display: block;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                animation: move1 10s infinite;}
-                             .ship::before {
-                               opacity: 0;
-                                background: url('Images_1/ship.svg') no-repeat;
-                                background-size: auto 100%;
-                                content: "";
-                                position: absolute;
-                                /* left: 15%; */
-                                width: 100%;
-                                height: 100%;
-                              animation: move2 5s linear infinite;
-                              animation-delay: 6s;}
-
-
-                                @keyframes move2 {
-                                    0% {opacity: 0; right:0;}
-                                    20% {opacity: .4; right: 100px;}
-                                    40% {opacity: .6; right: 200px;}
-                                    60% {opacity: .6; right: 300px;}
-                                    80% {opacity: .4; right: 400px;}
-                                    100% {opacity: 0; right: 500px;}}
-
-  .ground{
-    /* position: fixed; */
-    position: absolute;
-    z-index: 3;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;}
- .ground::before {
-   opacity: 1;
-    background: url('Images_1/ground_2.svg') bottom center;
-    background-size: auto 100% ;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;}
-
-    .building{
-      /* position: fixed; */
-      position: absolute;
-      z-index: 4;
-      display: block;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;}
-   .building::before {
-     opacity: 1;
-      background: url('Images_1/building_2.svg') left center no-repeat;
-      background-size: auto 100% ;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;}
-/* flowers */
-      .flowers_1{
-        /* position: fixed; */
-        position: absolute;
-           z-index: 4;
-           display: block;
-           top: 0;
-           left: 0;
-           right: 0;
-           bottom: 0;}
-        .flowers_1::before {
-          opacity: 1;
-           background: url('Images_1/flowers_frame1.svg') left center no-repeat;
-           background-size: auto 100% ;
-           content: "";
-           position: absolute;
-           width: 100%;
-           height: 100%;
-           animation: frame1 2s steps(1) infinite;}
-
-           @keyframes frame1 {
-               0% {opacity: 1;}
-               50% {opacity: 0;}
-               100% {opacity: 1;}}
-
-           .flowers_2 {
-               opacity: 1;
-               /* position: fixed; */
-               position: absolute;
-                z-index: 4;
-                display: block;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;}
-             .flowers_2::before {
-               opacity: 0;
-                background: url('Images_1/flowers_frame2.svg') left center no-repeat;
-                background-size: auto 100% ;
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                animation: frame2 2s steps(1) infinite;}
-
-
-                           @keyframes frame2 {
-                               0% {opacity: 0;}
-                               50% {opacity: 1;}
-                               100% {opacity: 0;}}
-
-
-                                  .flowers_light {
-                                  mix-blend-mode: hard-light;
-                                   opacity: 1;
-                                    position: absolute;
-                                    z-index: 4;
-                                    display: block;
-                                    top: 0;
-                                    left: 0;
-                                    right: 0;
-                                    bottom: 0;}
-                                 .flowers_light::before {
-                                   opacity: 0;
-                                    background: url('Images_1/light_flowers.svg') left center no-repeat;
-                                    background-size: auto 100% ;
-                                    content: "";
-                                    position: absolute;
-                                    width: 100%;
-                                    height: 100%;
-                                    animation: blink_lights 2s steps(1) infinite;}
-
-                                    @keyframes blink_lights {
-                                        0% {opacity: .3;}
-                                        50% {opacity: .6;}
-                                        100% {opacity: .3;}}
-
-
-
-                                        .robot_1{
-                                          /* position: fixed; */
-                                          position: absolute;
-                                           z-index: 5;
-                                           display: block;
-                                           top: 0;
-                                           left: 0;
-                                           right: 0;
-                                           bottom: 0;}
-                                          .robot_1::before {
-                                          opacity: 1;
-                                           background: url('Images_1/robot_frame1.svg') left center no-repeat;
-                                           background-size: auto 100% ;
-                                           content: "";
-                                           position: absolute;
-                                           width: 100%;
-                                           height: 100%;
-                                           animation: frame3 2s steps(1) infinite;}
-                                           @keyframes frame3 {
-                                           0% {background: url('Images_1/robot_frame1.svg') left center no-repeat;}
-                                           50% {background: url('Images_1/robot_frame2.svg') left center no-repeat;}
-                                           100% {background: url('Images_1/robot_frame1.svg') left center no-repeat;}}
-
-                                           .cosmonaut{
-                                             /* position: fixed; */
-                                             position: absolute;
-                                              z-index: 5;
-                                              display: block;
-                                              top: 0;
-                                              left: 0;
-                                              right: 0;
-                                              bottom: 0;}
-                                             .cosmonaut::before {
-                                             opacity: 1;
-                                              background: url('Images_1/cosmo_1.svg') left center no-repeat;
-                                              background-size: auto 100% ;
-                                              content: "";
-                                              position: absolute;
-                                              width: 100%;
-                                              height: 100%;
-                                              animation: frame4 7s steps(1) infinite;}
-                                              @keyframes frame4 {
-                                              0% {background: url('Images_1/cosmo_1.svg') left center no-repeat;}
-                                              60% {background: url('Images_1/cosmo_2.svg') left center no-repeat;}
-                                              100% {background: url('Images_1/cosmo_1.svg') left center no-repeat;}}
-
-                                              .cosmonaut_2{
-                                                position: fixed;
-                                                 z-index: 5;
-                                                 display: block;
-                                                 top: 0;
-                                                 left: 0;
-                                                 right: 0;
-                                                 bottom: 0;}
-                                                .cosmonaut_2::before {
-                                                 opacity: 1;
-                                                 background: url('Images_1/cosmo2_1.svg') left center no-repeat;
-                                                 background-size: auto 100% ;
-                                                 content: "";
-                                                 position: absolute;
-                                                 width: 100%;
-                                                 height: 100%;}
-
-                                                 .crater{
-                                                   /* position: fixed; */
-                                                   position: absolute;
-                                                    z-index: 5;
-                                                    display: block;
-                                                    top: 0;
-                                                    left: 0;
-                                                    right: 0;
-                                                    bottom: 0;}
-                                                   .crater::before {
-                                                    opacity: 1;
-                                                    background: url('Images_1/crater.svg') right center no-repeat;
-                                                    background-size: auto 100% ;
-                                                    content: "";
-                                                    position: absolute;
-                                                    width: 100%;
-                                                    height: 100%;}
 
         </style>
 
@@ -483,6 +71,10 @@
 <div class="stars_1"></div>
 <div class="stars_2"></div>
 <div class="stars_loud"></div>
+<div class="stars_loud_2"></div>
+<div class="stars_shine"></div>
+<div class="stars_shine1"></div>
+<div class="stars_shine2"></div>
 <div class="cloud"></div>
 <div class="ship"></div>
 <div class="ground"></div>
