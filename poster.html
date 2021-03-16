@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="Stylesheets/style.css">
 
 <!-- __________________JAVA_____________________ -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
 
         let x;
         $(window).on('scroll', function() {
@@ -27,27 +27,46 @@
           x = $(window).scrollTop();
           if (a > b) {
               $('.background').css('left', 0 - parseInt(x / 2) + '% ');}
-           /* $('.background').css('left', 0 - parseInt(x / 2) + '% '); */
         });
 
 
-      /*  let x;
+         $(window).on('scroll', function() {
+           if ($(this).scrollTop() > 0) {
+              $('.cosmonaut_2::before').css("opacity", "0");}});
+
         $(window).on('scroll', function() {
-          let y = 	$('.background').width();
-          let z = 	$(window).width();
-          let a = parseInt(x / 2);
-          let a = (parseInt(x / 2));
-          let b = (z - y);
-
-        	x = $(window).scrollTop();
-          if (a > b) {
-            	$('.background').css('left', 0 - parseInt(x / 2) + '% ');}
-        	 $('.background').css('left', 0 - parseInt(x / 2) + '% ');
-        }); */
+              $('.cosmonaut_walk::before').css('opacity', '1');});
 
 
+        $(window).on('scroll', function() {
+              $('.cosmonaut_walk::before').css('animation-play-state', 'running');  });
 
-      </script>
+
+              $(function(){
+              var a = new String;
+              a = $('.speach').text();
+              $('.speach').text('');
+              var c=a.length;
+              j=0;
+              setInterval(function(){
+              if(j<c){
+              $('.speach').text($('.speach').text()+a[j]);
+              j=j+1;
+              }
+              else {$('.speach').removeClass('before')}
+              },150);
+              });
+              </script>
+
+
+</script>
+
+
+
+
+
+
+
 <!-- __________________STYLE_____________________ -->
 
 
@@ -68,15 +87,32 @@
 <div class="sky_background_2"></div>
 <div class="planet"></div>
 <div class="planet_light"></div>
+
 <div class="stars_1"></div>
 <div class="stars_2"></div>
-<div class="stars_loud"></div>
+<div class="stars_3"></div>
+
+<div class="stars_base_1"></div>
+<div class="stars_blink_1"></div>
+
+<div class="stars_base_2"></div>
+<div class="stars_blink_2"></div>
+
+<div class="stars_base_3"></div>
+<div class="stars_blink_3"></div>
+
+<div class="comet"></div>
+
 <div class="stars_loud_2"></div>
 <div class="stars_shine"></div>
 <div class="stars_shine1"></div>
 <div class="stars_shine2"></div>
+
 <div class="cloud"></div>
+
 <div class="ship"></div>
+<div class="ship2"></div>
+
 <div class="ground"></div>
 <div class="building"></div>
 <div class="flowers_1"></div>
@@ -84,12 +120,19 @@
 <div class="flowers_light"></div>
 <div class="robot_1"></div>
 <div class="cosmonaut"></div>
+<div class="speach"> </div>
+
 <div class="crater"></div>
+<div class="crater_up"></div>
+
+<div class="light_stick"></div>
+<div class="light"></div>
 
 </div>
 </div>
 
 <div class="cosmonaut_2"></div>
+<div class="cosmonaut_walk"></div>
 
   </body>
 </html>
