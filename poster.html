@@ -42,23 +42,6 @@
               $('.cosmonaut_walk::before').css('animation-play-state', 'running');  });
 
 
-              $(function(){
-              var a = new String;
-              a = $('.speach').text();
-              $('.speach').text('');
-              var c=a.length;
-              j=0;
-              setInterval(function(){
-              if(j<c){
-              $('.speach').text($('.speach').text()+a[j]);
-              j=j+1;
-              }
-              else {$('.speach').removeClass('before')}
-              },150);
-              });
-              </script>
-
-
 </script>
 
 
@@ -120,7 +103,7 @@
 <div class="flowers_light"></div>
 <div class="robot_1"></div>
 <div class="cosmonaut"></div>
-<div class="speach"> </div>
+<div class="speach"></div>
 
 <div class="crater"></div>
 <div class="crater_up"></div>
@@ -135,4 +118,7 @@
 <div class="cosmonaut_walk"></div>
 
   </body>
+
+
+
 </html>
