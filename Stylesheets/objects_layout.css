@@ -1,7 +1,7 @@
 .building{
   /* position: fixed; */
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   display: block;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
   .flowers_1{
     /* position: fixed; */
     position: absolute;
-       z-index: 4;
+       z-index: 7;
        display: block;
        top: 0;
        left: 0;
@@ -44,7 +44,7 @@
            opacity: 1;
            /* position: fixed; */
            position: absolute;
-            z-index: 4;
+            z-index: 7;
             display: block;
             top: 0;
             left: 0;
@@ -71,7 +71,7 @@
                               mix-blend-mode: hard-light;
                                opacity: 1;
                                 position: absolute;
-                                z-index: 4;
+                                z-index: 8;
                                 display: block;
                                 top: 0;
                                 left: 0;
@@ -97,7 +97,7 @@
                                     .robot_1{
                                       /* position: fixed; */
                                       position: absolute;
-                                       z-index: 5;
+                                       z-index: 8;
                                        display: block;
                                        top: 0;
                                        left: 0;
@@ -105,7 +105,7 @@
                                        bottom: 0;}
                                       .robot_1::before {
                                       opacity: 1;
-                                       background: url('../Images_1/robot_frame1.svg') left center no-repeat;
+                                       background: url('../Images_1/robot_a.svg') left center no-repeat;
                                        background-size: auto 100% ;
                                        content: "";
                                        position: absolute;
@@ -113,14 +113,14 @@
                                        height: 100%;
                                        animation: frame3 2s steps(1) infinite;}
                                        @keyframes frame3 {
-                                       0% {background: url('../Images_1/robot_frame1.svg') left center no-repeat;}
-                                       50% {background: url('../Images_1/robot_frame2.svg') left center no-repeat;}
-                                       100% {background: url('../Images_1/robot_frame1.svg') left center no-repeat;}}
+                                       0% {background: url('../Images_1/robot_a.svg') left center no-repeat;}
+                                       50% {background: url('../Images_1/robot_b.svg') left center no-repeat;}
+                                       100% {background: url('../Images_1/robot_a.svg') left center no-repeat;}}
 
                                        .cosmonaut{
                                          /* position: fixed; */
                                          position: absolute;
-                                          z-index: 5;
+                                          z-index: 8;
                                           display: block;
                                           top: 0;
                                           left: 0;
@@ -140,9 +140,23 @@
                                           60% {background: url('../Images_1/cosmo_2.svg') left center no-repeat;}
                                           100% {background: url('../Images_1/cosmo_1.svg') left center no-repeat;}}
 
+  .speach {
+    position: absolute;
+     z-index: 8;
+     top: 56%;
+     left: 12%;
+  }
+  .speach::before {
+    font-size: 12px;
+  font-weight: bold;
+  color: white;
+  content: " No one is around ";
+}
+
                                           .cosmonaut_2{
+                                            opacity: 1;
                                             position: fixed;
-                                             z-index: 5;
+                                             z-index: 8;
                                              display: block;
                                              top: 0;
                                              left: 0;
@@ -157,10 +171,87 @@
                                              width: 100%;
                                              height: 100%;}
 
-                                             .crater{
+                                             .cosmonaut_walk{
+                                               opacity: 0;
+                                               position: fixed;
+                                                z-index: 8;
+                                                display: block;
+                                                top: 0;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: 0;}
+                                               .cosmonaut_walk::before {
+                                                opacity: 1;
+                                                /* background: url('../Images_1/cosmo2_1.svg') left center no-repeat; */
+                                                background-size: auto 100% ;
+                                                content: "";
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;
+                                                animation: walk 2s steps(1) infinite;
+                                                animation-play-state: paused;}
+
+                                            @keyframes walk {
+                                              0% {background: url('../Images_1/walk_a.svg') left center no-repeat;}
+                                              14% {background: url('../Images_1/walk_b.svg') left center no-repeat;}
+                                              28% {background: url('../Images_1/walk_c.svg') left center no-repeat;}
+                                              42% {background: url('../Images_1/walk_d.svg') left center no-repeat;}
+                                              56% {background: url('../Images_1/walk_e.svg') left center no-repeat;}
+                                              70% {background: url('../Images_1/walk_f.svg') left center no-repeat;}}
+
+                                              .light_stick{
+                                                /* position: fixed; */
+                                                position: absolute;
+                                                 z-index: 8;
+                                                 display: block;
+                                                 top: 0;
+                                                 left: 0;
+                                                 right: 0;
+                                                 bottom: 0;}
+                                                .light_stick::before {
+                                                 opacity: 1;
+                                                 background: url('../Images_1/light_stick.svg') right center no-repeat;
+                                                 background-size: auto 100% ;
+                                                 content: "";
+                                                 position: absolute;
+                                                 width: 100%;
+                                                 height: 100%;
+                                                 right: 10vw;}
+
+                                                 .light{
+                                                   background-blend-mode: hard-light;
+                                                   /* position: fixed; */
+                                                   position: absolute;
+                                                    z-index: 8;
+                                                    display: block;
+                                                    top: 0;
+                                                    left: 0;
+                                                    right: 0;
+                                                    bottom: 0;}
+                                                   .light::before {
+                                                    opacity: 1;
+                                                    background: url('../Images_1/light.svg') top right no-repeat;
+                                                    background-size: auto 100% ;
+                                                    content: "";
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    right: 10vw;
+                                                    animation: shine 2s linear infinite;}
+
+                                                    @keyframes shine {
+                                                      0% {opacity: .7;}
+                                                      40% {opacity: 1;}
+                                                      80% {opacity: .7;}
+                                                      100% {opacity: 1;}
+                                                    }
+
+
+
+                                             .crater {
                                                /* position: fixed; */
                                                position: absolute;
-                                                z-index: 5;
+                                                z-index: 9;
                                                 display: block;
                                                 top: 0;
                                                 left: 0;
@@ -168,9 +259,34 @@
                                                 bottom: 0;}
                                                .crater::before {
                                                 opacity: 1;
-                                                background: url('../Images_1/crater.svg') right center no-repeat;
+                                                background: url('../Images_1/crater_base.svg') right center no-repeat;
                                                 background-size: auto 100% ;
                                                 content: "";
                                                 position: absolute;
                                                 width: 100%;
                                                 height: 100%;}
+
+                                                .crater_up{
+                                                  background-blend-mode: hard-light;
+                                                  /* position: fixed; */
+                                                  position: absolute;
+                                                   z-index: 9;
+                                                   display: block;
+                                                   top: 0;
+                                                   left: 0;
+                                                   right: 0;
+                                                   bottom: 0;}
+                                                  .crater_up::before {
+                                                   opacity: 1;
+                                                   background-size: auto 100% ;
+                                                   content: "";
+                                                   position: absolute;
+                                                   width: 100%;
+                                                   height: 100%;
+                                                   animation: up 2s linear infinite;}
+
+                                                   @keyframes up {
+                                                     0% {background: url('../Images_1/crater_a.svg') right center no-repeat;}
+                                                     50% {background: url('../Images_1/crater_b.svg') right center no-repeat;}
+                                                     100% {background: url('../Images_1/crater_a.svg') right center no-repeat;}
+                                                   }
