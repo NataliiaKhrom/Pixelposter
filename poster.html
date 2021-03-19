@@ -16,32 +16,35 @@
 <!-- __________________JAVA_____________________ -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
+$(document).ready(function() {
 
         let x;
         $(window).on('scroll', function() {
-          let y = 	$('.background').width();
+          x = $(window).scrollTop();
+          let f = (0 - parseInt(x / 2));
+          /* let y = 	$('.background').width();
           let z = 	$(window).width();
           let a = (parseInt(x / 2));
-          let b = (z - y);
+          let b = (z - y); */
 
-          x = $(window).scrollTop();
-          if (a > b) {
-              $('.background').css('left', 0 - parseInt(x / 2) + '% ');}
+          if (f > -100) {
+              $('.background').css('left', f + '% ');}
         });
 
 
          $(window).on('scroll', function() {
-           if ($(this).scrollTop() > 0) {
-              $('.cosmonaut_2::before').css("opacity", "0");}});
+           console.log("go");
+               $('.cosmonaut_2').css("opacity", "0");});
 
         $(window).on('scroll', function() {
-              $('.cosmonaut_walk::before').css('opacity', '1');});
+              $('.cosmonaut_walk').css('opacity', '1');});
 
 
-        $(window).on('scroll', function() {
-              $('.cosmonaut_walk::before').css('animation-play-state', 'running');  });
+      /*   $(window).on('scroll', function() {
+              $('.cosmonaut_walk::before').css('animation-play-state', 'running');  }); */
 
 
+});
 </script>
 
 
