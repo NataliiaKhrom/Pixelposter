@@ -290,3 +290,37 @@
                                                      50% {background: url('../Images_1/crater_b.svg') right center no-repeat;}
                                                      100% {background: url('../Images_1/crater_a.svg') right center no-repeat;}
                                                    }
+
+
+
+
+      .move_buttons {
+        /* position: fixed; */
+        position: absolute;
+         z-index: 20;
+         display: block;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;}
+        .move_buttons::before {
+         opacity: 1;
+         background: url('../Images_1/buttons.svg') left center no-repeat;
+         background-size: auto 100% ;
+         content: "";
+       position: absolute;
+         width: 100%;
+         height: 100%;}
+
+
+         .right {
+           position: absolute;
+            z-index: 55;
+            display: block;
+           background: red;
+            opacity: .8;
+           width: 10%;
+           height: 10%;
+           top: 89%;
+           left: 32%;
+                  }
