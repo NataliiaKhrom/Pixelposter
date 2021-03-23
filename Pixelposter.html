@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Веб-плакат</title>
+    <!--  <link rel="stylesheet" href="Stylesheets/style_.css"> -->
+    <!-- <link rel="stylesheet" href="Stylesheets/reset.css"> -->
+<!-- <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+  <link rel="icon" type="image/png" href="Images/favicon.png" /> -->
+
+
+
+  <link rel="stylesheet" href="Stylesheets/style.css">
+
+<!-- __________________JAVA_____________________ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+  $(window).scrollTop(0);
+
+  $('.right').click(function(){
+    let x;
+    x = $(window).scrollTop();
+    let f = (0 - parseInt(x / 2));
+    if (f > -100) {
+        $('.background').css('left', f + '% ');}
+  });
+
+  $(".right").click(function(){
+  $(".cosmonaut_2").css("opacity" , "0");});
+
+  $(".right").click(function(){
+  $(".cosmonaut_walk").css("opacity" , "1");});
+
+
+  $(document).keydown(function(e){
+      if (e.keyCode == 83){ //S Down
+          $('.background').css('left', 0 - 5 + '% ');}
+      }
+      if (e.keyCode == 65){ //A Left
+            $('.background').css('left', 0 + 5 + '% ');}
+      }
+  });
+
+      /*  let x;
+        $(window).on('scroll', function() {
+          x = $(window).scrollTop();
+          let f = (0 - parseInt(x / 2));
+          if (f > -100) {
+              $('.background').css('left', f + '% ');}
+        });
+
+
+         $(window).on('scroll', function() {
+           console.log("go");
+               $('.cosmonaut_2').css("opacity", "0");});
+
+        $(window).on('scroll', function() {
+              $('.cosmonaut_walk').css('opacity', '1');}); */
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+
+
+  <body>
+<div class=" screen">
+<div class="background">
+
+<div class="sky_background"></div>
+<div class="sky_background_2"></div>
+<div class="planet"></div>
+<div class="planet_light"></div>
+
+<div class="stars_1"></div>
+<div class="stars_2"></div>
+<div class="stars_3"></div>
+
+<div class="stars_base_1"></div>
+<div class="stars_blink_1"></div>
+
+<div class="stars_base_2"></div>
+<div class="stars_blink_2"></div>
+
+<div class="stars_base_3"></div>
+<div class="stars_blink_3"></div>
+
+<div class="comet"></div>
+
+<div class="stars_loud_2"></div>
+<div class="stars_shine"></div>
+<div class="stars_shine1"></div>
+<div class="stars_shine2"></div>
+
+<div class="cloud"></div>
+
+<div class="ship"></div>
+<div class="ship2"></div>
+
+<div class="ground"></div>
+<div class="building"></div>
+<div class="flowers_1"></div>
+<div class="flowers_2"></div>
+<div class="flowers_light"></div>
+<div class="robot_1"></div>
+<div class="cosmonaut"></div>
+<div class="speach"></div>
+
+<div class="crater"></div>
+<div class="crater_up"></div>
+
+<div class="light_stick"></div>
+<div class="light"></div>
+
+</div>
+</div>
+
+<div class="cosmonaut_2"></div>
+<div class="cosmonaut_walk"></div>
+<div class="move_buttons"></div>
+<div class="right"></div>
+
+  </body>
+
+
+
+</html>
