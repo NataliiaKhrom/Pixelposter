@@ -324,3 +324,15 @@
            top: 89%;
            left: 32%;
                   }
+
+                  .left {
+                    position: absolute;
+                     z-index: 55;
+                     display: block;
+                    background: red;
+                     opacity: .8;
+                    width: 10%;
+                    height: 10%;
+                    top: 89%;
+                    left: 15%;
+                           }
