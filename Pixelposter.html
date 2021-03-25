@@ -18,30 +18,37 @@
 <script type="text/javascript">
  $(document).ready(function() {
   $(window).scrollTop(0);
+  let x = 0;
+  let f;
+  $('.right').click(function() {
 
-  $('.right').click(function(){
-    let x;
-    x = $(window).scrollTop();
-    let f = (0 - parseInt(x / 2));
-    if (f > -100) {
-        $('.background').css('left', f + '% ');}
+    $(".cosmonaut_2").css("opacity" , "0");
+    $(".cosmonaut_walk").css("opacity" , "1");
+
+    x -= 1;
+    f = 10 * x;
+    if (x < 10) {
+        $('.background').css('left', f + '% ');
+      }
+    });
   });
 
-  $(".right").click(function(){
-  $(".cosmonaut_2").css("opacity" , "0");});
-
-  $(".right").click(function(){
-  $(".cosmonaut_walk").css("opacity" , "1");});
-
-
-  $(document).keydown(function(e){
-      if (e.keyCode == 83){ //S Down
-          $('.background').css('left', 0 - 5 + '% ');}
+  /*    if ($(this).hasClass('right')) {
+        (x += 1;)
       }
-      if (e.keyCode == 65){ //A Left
-            $('.background').css('left', 0 + 5 + '% ');}
+      else {
+        (x -= 1;)
       }
+    f = -10 * x;
+    if (x < 10) {
+      $('.background').css('left', f + '% ');
+    }
   });
+}); */
+/* написать ограничение для х! */
+
+
+
 
       /*  let x;
         $(window).on('scroll', function() {
@@ -132,6 +139,7 @@
 <div class="cosmonaut_walk"></div>
 <div class="move_buttons"></div>
 <div class="right"></div>
+<div class="left"></div>
 
   </body>
 
