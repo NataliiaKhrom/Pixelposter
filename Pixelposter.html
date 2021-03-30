@@ -17,79 +17,55 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
  $(document).ready(function() {
-  $(window).scrollTop(0);
+   $(window).scrollTop(0);
 
-  let y = $('.background').left();
-  let x = 0;
-  let f;
-  $('.right').click(function() {
+   let x = 0;
+   let f;
+   let y;
 
-    $(".cosmonaut_2").css("opacity" , "0");
-    $(".cosmonaut_walk").css("opacity" , "1");
+ /* ДВИЖЕНИЕ ВПРАВО */
 
-    x -= 1;
-    f = 10 * x;
-    if (x < 10)  {
-        $('.background').css('left', f + '% ');
-      }
-    });
-  });
-
-  /*    if ($(this).hasClass('right')) {
-        (x += 1;)
-      }
-      else {
-        (x -= 1;)
-      }
-    f = -10 * x;
-    if (x < 10) {
-      $('.background').css('left', f + '% ');
-    }
-  });
-}); */
-/* написать ограничение для х! */
+   $('.right').click(function(){
 
 
-/* let x;
-$(window).on('scroll', function() {
-  x = $(window).scrollTop();
-  let f = (0 - parseInt(x / 2));
-   let y = 	$('.background').width();
-  let z = 	$(window).width();
-  let a = (parseInt(x / 2));
-  let b = (z - y);
+     $(".cosmonaut_2").css("opacity" , "0");
+     $(".cosmonaut_walk").css("opacity" , "1");
 
-  if (f > -100) {
-      $('.background').css('left', f + '% ');}
-});
+     setTimeout(function() {
+       $(".cosmonaut_2").css("opacity" , "1");
+        $(".cosmonaut_walk").css("opacity" , "0");
+      }, 500);
 
 
- $(window).on('scroll', function() {
-   console.log("go");
-       $('.cosmonaut_2').css("opacity", "0");});
+     x -= 1;
+     f = 10 * x;
+     y = $('.background').css("left");
+     if (x < 10 /* & y > -150 */) {
+         $('.background').css('left', f + '% ');
+       }
+     });
 
-$(window).on('scroll', function() {
-      $('.cosmonaut_walk').css('opacity', '1');}); */
+     /* ДВИЖЕНИЕ ВЛЕВО
+
+     $('.left').click(function(){
+
+       $(".cosmonaut_2").css("opacity" , "0");
+       $(".cosmonaut_walk").css("opacity" , "1");
+
+       setTimeout(function() {
+         $(".cosmonaut_2").css("opacity" , "1");
+          $(".cosmonaut_walk").css("opacity" , "0");
+        }, 500);
 
 
-
-
-      /*  let x;
-        $(window).on('scroll', function() {
-          x = $(window).scrollTop();
-          let f = (0 - parseInt(x / 2));
-          if (f > -100) {
-              $('.background').css('left', f + '% ');}
-        });
-
-
-         $(window).on('scroll', function() {
-           console.log("go");
-               $('.cosmonaut_2').css("opacity", "0");});
-
-        $(window).on('scroll', function() {
-              $('.cosmonaut_walk').css('opacity', '1');}); */
-
+       x += 1;
+       f = 10 * x;
+       y = $('#block').css("left");
+       if (x < 10) {
+           $('.background').css('left', f + '% ');
+         }
+       }); */
+   });
 </script>
 
 
