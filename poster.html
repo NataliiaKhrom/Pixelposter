@@ -18,29 +18,57 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-        let x;
-        $(window).on('scroll', function() {
-          x = $(window).scrollTop();
-          let f = (0 - parseInt(x / 2));
-          /* let y = 	$('.background').width();
-          let z = 	$(window).width();
-          let a = (parseInt(x / 2));
-          let b = (z - y); */
+  $(window).scrollTop(0);
 
-          if (f > -100) {
-              $('.background').css('left', f + '% ');}
-        });
+  let x = 0;
+  let f;
+  let y;
+
+/* ДВИЖЕНИЕ ВПРАВО */
+
+  $('.right').click(function(){
 
 
-         $(window).on('scroll', function() {
-           console.log("go");
-               $('.cosmonaut_2').css("opacity", "0");});
+    $(".cosmonaut_2").css("opacity" , "0");
+    $(".cosmonaut_walk").css("opacity" , "1");
 
-        $(window).on('scroll', function() {
-              $('.cosmonaut_walk').css('opacity', '1');});
+    setTimeout(function() {
+      $(".cosmonaut_2").css("opacity" , "1");
+       $(".cosmonaut_walk").css("opacity" , "0");
+     }, 500);
 
 
-});
+    x -= 1;
+    f = 10 * x;
+    y = $('.background').css("left");
+    if (x < 10 /* & y > -150 */) {
+        $('.background').css('left', f + '% ');
+      }
+    });
+
+    /* ДВИЖЕНИЕ ВЛЕВО
+
+    $('.left').click(function(){
+
+      $(".cosmonaut_2").css("opacity" , "0");
+      $(".cosmonaut_walk").css("opacity" , "1");
+
+      setTimeout(function() {
+        $(".cosmonaut_2").css("opacity" , "1");
+         $(".cosmonaut_walk").css("opacity" , "0");
+       }, 500);
+
+
+      x += 1;
+      f = 10 * x;
+      y = $('#block').css("left");
+      if (x < 10) {
+          $('.background').css('left', f + '% ');
+        }
+      }); */
+  });
+
+
 </script>
 
 
@@ -115,6 +143,9 @@ $(document).ready(function() {
 
 <div class="cosmonaut_2"></div>
 <div class="cosmonaut_walk"></div>
+
+<div class="right"></div>
+<div class="left"></div>
 
   </body>
 
