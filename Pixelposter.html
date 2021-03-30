@@ -18,6 +18,8 @@
 <script type="text/javascript">
  $(document).ready(function() {
   $(window).scrollTop(0);
+
+  let y = $('.background').left();
   let x = 0;
   let f;
   $('.right').click(function() {
@@ -27,7 +29,7 @@
 
     x -= 1;
     f = 10 * x;
-    if (x < 10) {
+    if (x < 10)  {
         $('.background').css('left', f + '% ');
       }
     });
@@ -46,6 +48,28 @@
   });
 }); */
 /* написать ограничение для х! */
+
+
+/* let x;
+$(window).on('scroll', function() {
+  x = $(window).scrollTop();
+  let f = (0 - parseInt(x / 2));
+   let y = 	$('.background').width();
+  let z = 	$(window).width();
+  let a = (parseInt(x / 2));
+  let b = (z - y);
+
+  if (f > -100) {
+      $('.background').css('left', f + '% ');}
+});
+
+
+ $(window).on('scroll', function() {
+   console.log("go");
+       $('.cosmonaut_2').css("opacity", "0");});
+
+$(window).on('scroll', function() {
+      $('.cosmonaut_walk').css('opacity', '1');}); */
 
 
 
