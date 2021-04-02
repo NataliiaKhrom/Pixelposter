@@ -210,16 +210,18 @@
                                                  bottom: 0;}
                                                 .light_stick::before {
                                                  opacity: 1;
-                                                 background: url('../Images_1/light_stick.svg') right center no-repeat;
+                                                 background: url('../Images_1/lighthouse.svg') right center no-repeat;
                                                  background-size: auto 100% ;
                                                  content: "";
                                                  position: absolute;
                                                  width: 100%;
                                                  height: 100%;
+                                                 right: 11vw;
                                                  right: 10vw;}
 
                                                  .light{
                                                    background-blend-mode: hard-light;
+                                                   opacity: 0;
                                                    /* position: fixed; */
                                                    position: absolute;
                                                     z-index: 8;
@@ -264,7 +266,8 @@
                                                 content: "";
                                                 position: absolute;
                                                 width: 100%;
-                                                height: 100%;}
+                                                height: 100%;
+                                              /* right: 4vw; */}
 
                                                 .crater_up{
                                                   background-blend-mode: hard-light;
@@ -283,6 +286,7 @@
                                                    position: absolute;
                                                    width: 100%;
                                                    height: 100%;
+                                                   /* right: 4vw; */
                                                    animation: up 2s linear infinite;}
 
                                                    @keyframes up {
