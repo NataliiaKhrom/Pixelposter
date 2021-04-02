@@ -19,9 +19,6 @@
  $(document).ready(function() {
    $(window).scrollTop(0);
 
-   let x = 0;
-   let f;
-   let y;
 
  /* ДВИЖЕНИЕ ВПРАВО */
 
@@ -35,17 +32,9 @@
        $(".cosmonaut_2").css("opacity" , "1");
         $(".cosmonaut_walk").css("opacity" , "0");
       }, 500);
+        });
 
-
-     x -= 1;
-     f = 10 * x;
-     y = $('.background').css("left");
-     if (x < 10 /* & y > -150 */) {
-         $('.background').css('left', f + '% ');
-       }
-     });
-
-     /* ДВИЖЕНИЕ ВЛЕВО
+  /* ДВИЖЕНИЕ ВЛЕВО */
 
      $('.left').click(function(){
 
@@ -56,16 +45,21 @@
          $(".cosmonaut_2").css("opacity" , "1");
           $(".cosmonaut_walk").css("opacity" , "0");
         }, 500);
+      });
 
+      let some_counter = 0;
+    $(".right, .left").click(function(){
+  if ($(this).hasClass("right") && some_counter < 11) {
+    some_counter++;
+  } else if ($(this).hasClass("left") && some_counter > 0) {
+    some_counter--;
+  }
+    $('.background').css('left', -10 * some_counter + '%');
+  });
 
-       x += 1;
-       f = 10 * x;
-       y = $('#block').css("left");
-       if (x < 10) {
-           $('.background').css('left', f + '% ');
-         }
-       }); */
    });
+
+
 </script>
 
 
