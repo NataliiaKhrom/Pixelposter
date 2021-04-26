@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Веб-плакат</title>
+    <!--  <link rel="stylesheet" href="Stylesheets/style_.css"> -->
+    <!-- <link rel="stylesheet" href="Stylesheets/reset.css"> -->
+    <!-- <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" /> -->
+
+
+
+    <link rel="stylesheet" href="Stylesheets/style.css">
+
+    <style media="screen">
+
+    .button2 {
+      height: 20%;
+      width: 20%;
+      background: red;
+      z-index: 40;
+    }
+
+    </style>
+
+
+    <!-- __________________JAVA_____________________ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function() {
+
+
+
+    $('.button2').click(function(){
+      let x;
+      x = $(window).scrollTop();
+      let f = (0 - parseInt(x / 2));
+      if (f > -100) {
+          $('.background').css('left', f + '% ');}
+    });
+
+    $(".right").click(function(){
+    $(".cosmonaut_2").css("opacity" , "0");
+  });
+
+    /* $(window).scroll($.debounce( 250, true, function(){
+           $('.cosmonaut_2').css("opacity", "0");
+    } ) );
+    $(window).scroll($.debounce( 250, function(){
+           $('.cosmonaut_2').css("opacity", "1");
+    } ) ); */
+
+    });
+
+    </script>
+
+
+
+
+  </head>
+
+
+
+
+
+
+  <body>
+
+
+<div class=" screen">
+<div class="background">
+  <div class="sky_background"></div>
+  <div class="ground"></div>
+</div>
+
+</div>
+
+<div class="cosmonaut_2"></div>
+<div class="cosmonaut_walk"></div>
+<div class="right"></div>
+
+  </body>
+</html>
