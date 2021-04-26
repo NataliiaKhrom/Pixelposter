@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Веб-плакат</title>
+    <!--  <link rel="stylesheet" href="Stylesheets/style_.css"> -->
+    <!-- <link rel="stylesheet" href="Stylesheets/reset.css"> -->
+    <!-- <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" /> -->
+
+
+
+    <link rel="stylesheet" href="Stylesheets/style.css">
+
+    <style media="screen">
+
+    .text_cont_inner {
+      display: none;
+      color: red;
+      background: white;
+      font-family: "MK-90";
+    }
+
+    .button {
+      width: 10%;
+      height: 10%;
+      top: 50%;
+      left: 50%;
+      background: blue;
+    }
+
+    </style>
+
+
+    <!-- __________________JAVA_____________________ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      $(".button").click(function(){
+  		$(".text_cont_inner").css("display" , "block");
+  	});
+
+     $(function(){
+      var a = new String;
+      a = $('.text_cont_inner').text();
+      $('.text_cont_inner').text('');
+      var c=a.length;
+      j=0;
+      setInterval(function(){
+      if(j<c){
+      $('.text_cont_inner').text($('.text_cont_inner').text()+a[j]);
+      j=j+1;
+      }
+      else {$('.text_cont_inner').removeClass('after')}
+    },150);
+    });
+
+/*	$("button").trigger(function(){
+      var a = new String;
+      a = $('.text_cont_inner').text();
+      $('.text_cont_inner').text('');
+      var c=a.length;
+      j=0;
+      setInterval(function(){
+      if(j<c){
+      $('.text_cont_inner').text($('.text_cont_inner').text()+a[j]);
+      j=j+1;
+      }
+      else {$('.text_cont_inner').removeClass('after')}
+      },150);
+    }); */
+});
+
+    </script>
+
+
+
+
+  </head>
+
+
+
+
+
+
+  <body>
+
+<div class="button">
+ </div>
+
+<div class="text_cont_inner after">
+<p> Text text text text text text text text text </p>
+</div>
+
+<div class="cosmonaut_2"></div>
+<div class="cosmonaut_walk"></div>
+
+  </body>
+</html>
