@@ -31,7 +31,7 @@
      setTimeout(function() {
        $(".cosmonaut_2").css("opacity" , "1");
         $(".cosmonaut_walk").css("opacity" , "0");
-      }, 500);
+      }, 400);
         });
 
   /* ДВИЖЕНИЕ ВЛЕВО */
@@ -44,18 +44,63 @@
        setTimeout(function() {
          $(".cosmonaut_2").css("opacity" , "1");
           $(".cosmonaut_walk").css("opacity" , "0");
-        }, 500);
+        }, 400);
       });
 
       let some_counter = 0;
     $(".right, .left").click(function(){
-  if ($(this).hasClass("right") && some_counter < 11) {
+  if ($(this).hasClass("right") && some_counter < 6) {
     some_counter++;
   } else if ($(this).hasClass("left") && some_counter > 0) {
     some_counter--;
   }
     $('.background').css('left', -10 * some_counter + '%');
   });
+
+  $('.char_dialog').click(function(){
+    $(".dialog1").css("display" , "block");
+    $(".cross").css("display" , "block");
+       });
+
+       $('.cross').click(function(){
+         $(".dialog1").css("display" , "none");
+         $(".cross").css("display" , "none");
+            });
+
+            $('.call_house').click(function(){
+              $(".text_house").css("display" , "block");
+              $(".cross_main").css("display" , "block");
+                 });
+
+                 $('.call_build').click(function(){
+                   $(".text_build").css("display" , "block");
+                   $(".cross_main").css("display" , "block");
+                      });
+
+                      $('.call_robot').click(function(){
+                        $(".text_robot").css("display" , "block");
+                        $(".cross_main").css("display" , "block");
+                           });
+
+                           $('.call_litter').click(function(){
+                             $(".text_litter").css("display" , "block");
+                             $(".cross_main").css("display" , "block");
+                                });
+
+                                $('.call_grass').click(function(){
+                                  $(".text_grass").css("display" , "block");
+                                  $(".cross_main").css("display" , "block");
+                                     });
+
+                 $('.cross_main').click(function(){
+                   $(".text_house").css("display" , "none");
+                   $(".text_build").css("display" , "none");
+                   $(".text_robot").css("display" , "none");
+                   $(".text_litter").css("display" , "none");
+                   $(".text_grass").css("display" , "none");
+                   $(".cross_main").css("display" , "none");
+                      });
+
 
    });
 
@@ -82,14 +127,18 @@
 <div class="background">
 
 <div class="sky_background"></div>
-<div class="sky_background_2"></div>
+
+<!--объединить два в один: -->
 <div class="planet"></div>
 <div class="planet_light"></div>
 
+<!--объединить в один: -->
 <div class="stars_1"></div>
 <div class="stars_2"></div>
 <div class="stars_3"></div>
 
+
+<!-- разобрать -->
 <div class="stars_base_1"></div>
 <div class="stars_blink_1"></div>
 
@@ -101,39 +150,60 @@
 
 <div class="comet"></div>
 
-<div class="stars_loud_2"></div>
-<div class="stars_shine"></div>
-<div class="stars_shine1"></div>
-<div class="stars_shine2"></div>
-
+<!-- облака: анимация -->
 <div class="cloud"></div>
+<div class="cloud2"></div>
 
+<!-- корабли: анимация -->
 <div class="ship"></div>
 <div class="ship2"></div>
 
+
+<!-- объединить -->
 <div class="ground"></div>
 <div class="building"></div>
-<div class="flowers_1"></div>
-<div class="flowers_2"></div>
-<div class="flowers_light"></div>
-<div class="robot_1"></div>
-<div class="cosmonaut"></div>
-<div class="speach"></div>
+<div class="objects"></div>
 
-<div class="crater"></div>
-<div class="crater_up"></div>
+<div class="call_build"></div>
+<div class="call_house"></div>
+<div class="call_robot"></div>
+<div class="call_litter"></div>
+<div class="call_grass"></div>
+<div class="char_dialog"></div>
 
-<div class="light_stick"></div>
-<div class="light"></div>
 
 </div>
+
+</div>
+
+<div class="cosmonaut"></div>
+<div class="arrows">
+
 </div>
 
 <div class="cosmonaut_2"></div>
 <div class="cosmonaut_walk"></div>
 <div class="move_buttons"></div>
+
 <div class="right"></div>
 <div class="left"></div>
+
+
+
+<div class="dialog1"></div>
+<div class="cross"></div>
+
+<div class="cross_main"></div>
+
+<div class="text_house"></div>
+<div class="text_build"></div>
+<div class="text_robot"></div>
+<div class="text_litter"></div>
+<div class="text_grass"></div>
+
+
+<div class="text"></div>
+
 
   </body>
 
