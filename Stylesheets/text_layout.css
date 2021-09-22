@@ -3,7 +3,7 @@
 .text {
   /* position: fixed; */
   position: absolute;
-  z-index: 7;
+  z-index: 60;
   display: block;
   display: none;
   opacity: .55;
@@ -23,7 +23,7 @@
   .dialog1 {
     /* position: fixed; */
     position: absolute;
-    z-index: 7;
+    z-index: 60;
     display: none;
     opacity: 1;
     top: 5vh;
@@ -42,7 +42,7 @@
     .cross {
       cursor: pointer;
       position: absolute;
-       z-index: 55;
+       z-index: 65;
        display: none;
       background: none;
        opacity: .8;
@@ -240,7 +240,7 @@
   .cross_main {
     cursor: pointer;
     position: absolute;
-     z-index: 55;
+     z-index: 65;
      display: none;
     background: none;
      opacity: .8;
