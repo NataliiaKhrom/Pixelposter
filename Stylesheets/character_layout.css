@@ -121,6 +121,81 @@
                                          height: 100%;}
 
 
+                                         .walk{
+                                           /* position: fixed; */
+                                           position: absolute;
+                                            z-index: 16;
+                                            display: none;
+                                            height: 18%;
+                                            width: 15%;
+                                            top: 70%;
+                                            left: 24%;
+                                            right: 0;
+                                            bottom: 0;}
+                                           .walk::before {
+                                            opacity: 1;
+                                             background: url('../Images_2/walk_mini_a.svg') left center no-repeat;
+                                            background-size: auto 100% ;
+                                            content: "";
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 100%;
+                                            animation: walking 1s steps(1) infinite;
+                                          /* animation-play-state: paused;*/}
+
+                                        @keyframes walking {
+                                          0% {background: url('../Images_2/walk_mini_a.svg') left center no-repeat;}
+                                            25% {background: url('../Images_2/walk_mini_b.svg') left center no-repeat;}
+                                            50% {background: url('../Images_2/walk_mini_c.svg') left center no-repeat;}
+                                            75% {background: url('../Images_2/walk_mini_d.svg') left center no-repeat;}
+                                        /*  0% {background: url('../Images_2/walk_mini_a.svg') left center no-repeat;}
+                                          10% {background: url('../Images_2/walk_mini_b.svg') left center no-repeat;}
+                                          20% {background: url('../Images_2/walk_mini_c.svg') left center no-repeat;}
+                                          30% {background: url('../Images_2/walk_mini_d.svg') left center no-repeat;}
+                                          40% {background: url('../Images_2/walk_mini_c.svg') left center no-repeat;}
+                                          50% {background: url('../Images_2/walk_mini_a.svg') left center no-repeat;}
+                                          60% {background: url('../Images_2/walk_mini_b.svg') left center no-repeat;}
+                                          70% {background: url('../Images_2/walk_mini_c.svg') left center no-repeat;}
+                                          80% {background: url('../Images_2/walk_mini_d.svg') left center no-repeat;}
+                                        90% {background: url('../Images_2/walk_mini_c.svg') left center no-repeat;} */}
+
+                                          .walk_b{
+                                            /* position: fixed; */
+                                            position: absolute;
+                                             z-index: 16;
+                                             display: none;
+                                             height: 18%;
+                                             width: 15%;
+                                             top: 70%;
+                                             left: 24%;
+                                             right: 0;
+                                             bottom: 0;}
+                                            .walk_b::before {
+                                             opacity: 1;
+                                              background: url('../Images_2/walk_mini_a_b.svg') left center no-repeat;
+                                             background-size: auto 100% ;
+                                             content: "";
+                                             position: absolute;
+                                             width: 100%;
+                                             height: 100%;
+                                             animation: walking_b 2s steps(1) infinite;
+                                           /* animation-play-state: paused;*/}
+
+                                         @keyframes walking_b {
+                                           0% {background: url('../Images_2/walk_mini_a_b.svg') left center no-repeat;}
+                                           10% {background: url('../Images_2/walk_mini_b_b.svg') left center no-repeat;}
+                                           20% {background: url('../Images_2/walk_mini_c_b.svg') left center no-repeat;}
+                                           30% {background: url('../Images_2/walk_mini_d_b.svg') left center no-repeat;}
+                                           40% {background: url('../Images_2/walk_mini_a_b.svg') left center no-repeat;}
+                                           50% {background: url('../Images_2/walk_mini_b_b.svg') left center no-repeat;}
+                                           60% {background: url('../Images_2/walk_mini_c_b.svg') left center no-repeat;}
+                                           70% {background: url('../Images_2/walk_mini_d_b.svg') left center no-repeat;}
+                                           80% {background: url('../Images_2/walk_mini_a_b.svg') left center no-repeat;}
+                                           90% {background: url('../Images_2/walk_mini_b_b.svg') left center no-repeat;}}
+
+
+
+
 
 
 
