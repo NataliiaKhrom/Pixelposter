@@ -1,0 +1,171 @@
+
+                .move_buttons {
+                  /* position: fixed; */
+                  position: absolute;
+                   z-index: 20;
+                   display: none;
+                   top: 0;
+                   left: 0;
+                   right: 0;
+                   bottom: 0;}
+                  .move_buttons::before {
+                   opacity: 1;
+                   background: url('../Images_2/arrows.svg') left center no-repeat;
+                   background-size: auto 100% ;
+                   content: "";
+                 position: absolute;
+                   width: 100%;
+                   height: 100%;}
+
+
+                   .right {
+                     cursor: pointer;
+                     position: absolute;
+                      z-index: 55;
+                      display: block;
+                     background: red;
+                      opacity: .8;
+                     width: 5%;
+                     height: 8%;
+                     top: 84%;
+                     left: 29%;
+                            }
+
+                            .left {
+                              cursor: pointer;
+                              position: absolute;
+                               z-index: 55;
+                               display: block;
+                              background: red;
+                               opacity: .8;
+                              width: 5%;
+                              height: 8%;
+                              top: 84%;
+                              left: 22%;
+                                     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    .robot_1{
+                                      /* position: fixed; */
+                                      position: absolute;
+                                       z-index: 8;
+                                       display: block;
+                                       top: 0;
+                                       left: 0;
+                                       right: 0;
+                                       bottom: 0;}
+                                      .robot_1::before {
+                                      opacity: 1;
+                                       background: url('../Images_1/robot_a.svg') left center no-repeat;
+                                       background-size: auto 100% ;
+                                       content: "";
+                                       position: absolute;
+                                       width: 100%;
+                                       height: 100%;
+                                       animation: frame3 2s steps(1) infinite;}
+                                       @keyframes frame3 {
+                                       0% {background: url('../Images_1/robot_a.svg') left center no-repeat;}
+                                       50% {background: url('../Images_1/robot_b.svg') left center no-repeat;}
+                                       100% {background: url('../Images_1/robot_a.svg') left center no-repeat;}}
+
+                                       .cosmonaut{
+                                         /* position: fixed; */
+                                         position: absolute;
+                                          z-index: 50;
+                                          display: block;
+                                          height: 18%;
+                                          width: 15%;
+                                          top: 70%;
+                                          left: 24%;
+                                          right: 0;
+                                          bottom: 0;}
+                                         .cosmonaut::before {
+                                         opacity: 1;
+                                          background: url('../Images_2/character_stand_mini.svg') left center no-repeat;
+                                          background-size: auto 100% ;
+                                          content: "";
+                                          position: absolute;
+                                          width: 100%;
+                                          height: 100%;}
+
+                                        .arrows {
+                                          /* position: fixed; */
+                                          position: absolute;
+                                           z-index: 50;
+                                           display: block;
+                                           height: 13%;
+                                           width: 15%;
+                                           top: 82%;
+                                           left: 22%;
+                                           right: 0;
+                                           bottom: 0;
+                                        }
+                                        .arrows::before {
+                                        opacity: 1;
+                                         background: url('../Images_2/arrows_mini.svg') left center no-repeat;
+                                         background-size: auto 100% ;
+                                         content: "";
+                                         position: absolute;
+                                         width: 100%;
+                                         height: 100%;}
+
+
+
+
+
+                                          .cosmonaut_2{
+                                            opacity: 1;
+                                            position: fixed;
+                                             z-index: 8;
+                                             display: none;
+                                             top: 0;
+                                             left: 0;
+                                             right: 0;
+                                             bottom: 0;}
+                                            .cosmonaut_2::before {
+                                             opacity: 1;
+                                             background: url('../Images_2/character_stand.svg') left center no-repeat;
+                                             background-size: auto 100% ;
+                                             content: "";
+                                             position: absolute;
+                                             width: 100%;
+                                             height: 100%;}
+
+                                             .cosmonaut_walk{
+                                               opacity: 0;
+                                               position: fixed;
+                                                z-index: 8;
+                                                display: none;
+                                                top: 0;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: 0;}
+                                               .cosmonaut_walk::before {
+                                                opacity: 1;
+                                                /* background: url('../Images_1/cosmo2_1.svg') left center no-repeat; */
+                                                background-size: auto 100% ;
+                                                content: "";
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;
+                                                animation: walk 2s steps(1) infinite;
+                                              /* animation-play-state: paused;*/}
+
+                                            @keyframes walk {
+                                              0% {background: url('../Images_1/walk_a.svg') left center no-repeat;}
+                                              14% {background: url('../Images_1/walk_b.svg') left center no-repeat;}
+                                              28% {background: url('../Images_1/walk_c.svg') left center no-repeat;}
+                                              42% {background: url('../Images_1/walk_d.svg') left center no-repeat;}
+                                              56% {background: url('../Images_1/walk_e.svg') left center no-repeat;}
+                                              70% {background: url('../Images_1/walk_f.svg') left center no-repeat;}}
