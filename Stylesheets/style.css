@@ -4,4 +4,6 @@
 @import 'content.css';
 @import 'sky_layout.css';
 @import "objects_layout.css";
+@import "text_layout.css";
+@import "character_layout.css";
 @import "responsive.css";
