@@ -82,7 +82,7 @@
                                        .cosmonaut{
                                          /* position: fixed; */
                                          position: absolute;
-                                          z-index: 50;
+                                          z-index: 30;
                                           display: block;
                                           height: 18%;
                                           width: 15%;
