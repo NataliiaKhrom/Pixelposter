@@ -25,26 +25,30 @@
    $('.right').click(function(){
 
 
-     $(".cosmonaut_2").css("opacity" , "0");
+     $(".cosmonaut").css("opacity" , "0");
      $(".cosmonaut_walk").css("opacity" , "1");
+     $(".walk").css("display" , "block");
 
      setTimeout(function() {
-       $(".cosmonaut_2").css("opacity" , "1");
+       $(".cosmonaut").css("opacity" , "1");
         $(".cosmonaut_walk").css("opacity" , "0");
-      }, 400);
+        $(".walk").css("display" , "none");
+      }, 600);
         });
 
   /* ДВИЖЕНИЕ ВЛЕВО */
 
      $('.left').click(function(){
 
-       $(".cosmonaut_2").css("opacity" , "0");
+       $(".cosmonaut").css("opacity" , "0");
        $(".cosmonaut_walk").css("opacity" , "1");
+       $(".walk_b").css("display" , "block");
 
        setTimeout(function() {
-         $(".cosmonaut_2").css("opacity" , "1");
+         $(".cosmonaut").css("opacity" , "1");
           $(".cosmonaut_walk").css("opacity" , "0");
-        }, 400);
+          $(".walk_b").css("display" , "none");
+        }, 600);
       });
 
       let some_counter = 0;
@@ -177,6 +181,8 @@
 </div>
 
 <div class="cosmonaut"></div>
+<div class="walk"></div>
+<div class="walk_b"></div>
 <div class="arrows">
 
 </div>
