@@ -82,7 +82,7 @@
                                        .cosmonaut{
                                          /* position: fixed; */
                                          position: absolute;
-                                          z-index: 30;
+                                          z-index: 16;
                                           display: block;
                                           height: 18%;
                                           width: 15%;
@@ -102,7 +102,7 @@
                                         .arrows {
                                           /* position: fixed; */
                                           position: absolute;
-                                           z-index: 50;
+                                           z-index: 18;
                                            display: block;
                                            height: 13%;
                                            width: 15%;
