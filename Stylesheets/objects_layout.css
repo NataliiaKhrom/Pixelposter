@@ -53,3 +53,23 @@
       position: absolute;
       width: 100%;
       height: 100%;}
+
+
+      .floor_1 {
+        /* position: fixed; */
+        position: absolute;
+        z-index: 15;
+        display: block;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;}
+      .floor_1::before {
+       opacity: 1;
+        background: url('../Images_2/floor_1.svg') left center no-repeat;
+        background-size: auto 100% ;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;}
