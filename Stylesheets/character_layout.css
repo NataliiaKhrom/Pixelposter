@@ -23,7 +23,7 @@
                      position: absolute;
                       z-index: 55;
                       display: block;
-                     background: red;
+                     background: none;
                       opacity: .8;
                      width: 5%;
                      height: 8%;
@@ -36,7 +36,7 @@
                               position: absolute;
                                z-index: 55;
                                display: block;
-                              background: red;
+                              background: none;
                                opacity: .8;
                               width: 5%;
                               height: 8%;
